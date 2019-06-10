@@ -29,5 +29,11 @@
     <ClInclude Include="UkkonenExport.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="SuffixTree.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="SuffixTreeNode.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

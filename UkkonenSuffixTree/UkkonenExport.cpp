@@ -3,16 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "UkkonenExport.h"
-#include "SuffixTreeNode.cpp"
-#include "SuffixTree.cpp"
-
-// Tree related
-extern "C" DllExport SuffixTree* CreateSuffixTree();
-extern "C" DllExport void DestroySuffixTree(SuffixTree* tree);
-extern "C" DllExport void Build(SuffixTree* tree, char* input, int position, int size);
-
-// Find longest match
-extern "C" DllExport void FindLongestMatch(SuffixTree* tree, char* input, int position, int size, int* displacement, int* length);
+#include "SuffixTree.h"
+#include "SuffixTreeNode.h"
 
 DllExport SuffixTree* CreateSuffixTree() {
 	return new SuffixTree();
