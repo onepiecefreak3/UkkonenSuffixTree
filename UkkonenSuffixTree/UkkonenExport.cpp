@@ -6,6 +6,9 @@
 #include "SuffixTree.h"
 #include "SuffixTreeNode.h"
 
+void Traverse(SuffixTreeNode* node, char* input, int position, int size, int* displacement, int* length);
+int TraverseEdge(SuffixTreeNode* node, char* input, int position, int size, int* displacement, int* length);
+
 DllExport SuffixTree* CreateSuffixTree() {
 	return new SuffixTree();
 }
