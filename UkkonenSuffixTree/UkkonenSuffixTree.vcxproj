@@ -152,10 +152,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ukkonen_suffixtree_export.cpp" />
+    <ClCompile Include="SuffixTreeNode.cpp" />
+    <ClCompile Include="SuffixTree.cpp" />
+    <ClCompile Include="UkkonenExport.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ukkonen_suffixtree_export.h" />
+    <ClInclude Include="UkkonenExport.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

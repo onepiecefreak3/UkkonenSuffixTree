@@ -15,12 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ukkonen_suffixtree_export.cpp">
+    <ClCompile Include="SuffixTreeNode.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="SuffixTree.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="UkkonenExport.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ukkonen_suffixtree_export.h">
+    <ClInclude Include="UkkonenExport.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
