@@ -9,19 +9,19 @@
 void Traverse(SuffixTreeNode* node, char* input, int position, int size, int* displacement, int* length);
 int TraverseEdge(SuffixTreeNode* node, char* input, int position, int size, int* displacement, int* length);
 
-DllExport SuffixTree* CreateSuffixTree() {
+extern "C" DllExport SuffixTree* CreateSuffixTree() {
 	return new SuffixTree();
 }
 
-DllExport void DestroySuffixTree(SuffixTree* tree) {
+extern "C" DllExport void DestroySuffixTree(SuffixTree* tree) {
 	delete tree;
 }
 
-DllExport void Build(SuffixTree* tree, char* input, int position, int size) {
+extern "C" DllExport void Build(SuffixTree* tree, char* input, int position, int size) {
 	tree->Build(input, position, size);
 }
 
-DllExport void FindLongestMatch(SuffixTree* tree, char* input, int position, int size, int* displacement, int* length) {
+extern "C" DllExport void FindLongestMatch(SuffixTree* tree, char* input, int position, int size, int* displacement, int* length) {
 	Traverse(tree->root, input, position, size, displacement, length);
 }
 
