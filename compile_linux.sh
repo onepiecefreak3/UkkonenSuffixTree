@@ -1,1 +1,2 @@
-g++ -D__Unix -fPIC -shared -o ukkonen.so UkkonenExport.cpp SuffixTree.cpp SuffixTreeNode.cpp
+g++ -D__Unix -fPIC -m32 -shared -o build/ukkonen32.so UkkonenSuffixTree/UkkonenExport.cpp UkkonenSuffixTree/SuffixTree.cpp UkkonenSuffixTree/SuffixTreeNode.cpp
+g++ -D__Unix -fPIC -shared -o build/ukkonen64.so UkkonenSuffixTree/UkkonenExport.cpp UkkonenSuffixTree/SuffixTree.cpp UkkonenSuffixTree/SuffixTreeNode.cpp
