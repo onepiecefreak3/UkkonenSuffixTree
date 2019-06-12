@@ -2,7 +2,7 @@
 
 SuffixTree::SuffixTree()
 {
-	rootEnd = new int();
+	rootEnd = new int(-1);
 }
 
 SuffixTree::~SuffixTree()

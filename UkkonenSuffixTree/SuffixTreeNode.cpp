@@ -6,9 +6,9 @@ SuffixTreeNode::SuffixTreeNode(int start, int* end, SuffixTreeNode* link)
 	For internal nodes, suffixLink will be set to root
 	by default in  current extension and may change in
 	next extension*/
-	suffixLink = link;
-	start = start;
-	end = end;
+	this->suffixLink = link;
+	this->start = start;
+	this->end = end;
 }
 
 SuffixTreeNode::~SuffixTreeNode()
