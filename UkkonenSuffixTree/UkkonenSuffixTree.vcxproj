@@ -152,11 +152,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Logging.cpp" />
     <ClCompile Include="SuffixTreeNode.cpp" />
     <ClCompile Include="SuffixTree.cpp" />
     <ClCompile Include="UkkonenExport.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Logging.h" />
     <ClInclude Include="SuffixTree.h" />
     <ClInclude Include="SuffixTreeNode.h" />
     <ClInclude Include="UkkonenExport.h" />
